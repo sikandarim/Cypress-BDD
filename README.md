@@ -2,36 +2,36 @@
 
 This guide will help you **install**, **configure**, and **run** the Cypress-based Web Test Automation Framework developed for **robust Web Testing**.
 
----
+
 
 ## 📦 Project Structure Overview
 
+├── cypress/ │ ├── e2e/ # 📄 Feature files (BDD format) │ ├── support/ # 🛠️ Custom commands and utilities │ ├── fixtures/ # 📊 Test data │ └── plugins/ # 🔌 Cypress plugins ├── Jenkinsfile # ⚙️ CI/CD pipeline configuration ├── package.json # 📦 Project dependencies ├── README.md # 📝 Project documentation └── allure-results/ # 
 
 
-📦 Project Structure Overview
+---
+
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have the following tools installed:
+
+- ✅ **JDK (Java Development Kit)** — Required for tools like Jenkins.
+- ✅ **Node.js** — Required to run Cypress and manage project dependencies.
+- ✅ **Cypress** — The core testing framework (installed via npm).
+- ✅ **Allure Commandline** — For generating beautiful test reports.
+- ✅ **Git** — For cloning the repository and version control.
+- ✅ **Jenkins** *(Optional)* — For automating test execution in CI/CD pipelines.
+
+---
+
+## 🛠 Installation Steps
+
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/sikandarim/Cypress-BDD.git
+   cd Cypress-BDD
 
 
-├── cypress/
-│   ├── e2e/          # 📄 Feature files (BDD format)
-│   ├── support/      # 🛠️ Custom commands and utilities
-│   ├── fixtures/     # 📊 Test data
-│   └── plugins/      # 🔌 Cypress plugins
-├── Jenkinsfile       # ⚙️ CI/CD pipeline configuration
-├── package.json      # 📦 Project dependencies
-├── README.md         # 📝 Project documentation
-└── allure-results/   # 📂 Allure raw test result files
-⚡ Prerequisites
-
-Before you begin, ensure the following tools are installed:
-
-
-✅ JDK (Java Development Kit) – Required for tools like Jenkins.
-✅ Node.js – Required to run Cypress and manage project dependencies.
-✅ Cypress – The core testing framework (installed via npm).
-✅ Allure Commandline – For generating beautiful test reports.
-✅ Git – For cloning the repository and version control.
-✅ Jenkins (Optional) – For automating test execution in CI/CD pipelines.
-🛠️ Installation Steps
 
 1. Clone the Repository
 git clone https://github.com/sikandarim/Cypress-BDD.git
