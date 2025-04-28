@@ -1,8 +1,10 @@
-🚀 Set Up and Use This Cypress Automation Framework
+🚀 Appium-MobileFrameWork
+
 
 This guide will help you install, configure, and run the Cypress-based Web Test Automation Framework developed for robust Web Testing.
 
 📦 Project Structure Overview
+
 
 ├── cypress/
 │   ├── e2e/          # 📄 Feature files (BDD format)
@@ -16,6 +18,7 @@ This guide will help you install, configure, and run the Cypress-based Web Test 
 ⚡ Prerequisites
 
 Before you begin, ensure the following tools are installed:
+
 
 ✅ JDK (Java Development Kit) – Required for tools like Jenkins.
 ✅ Node.js – Required to run Cypress and manage project dependencies.
