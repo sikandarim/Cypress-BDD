@@ -32,7 +32,7 @@ pipeline {
 
         stage('Publish Allure Report') {
             steps {
-                allure includeProperties: false, jdk: '', reportBuildPolicy: 'ALWAYS', results: [[path: 'allure-results']]
+                 sh '/opt/homebrew/bin/allure generate --clean'
             }
         }
     }
