@@ -1,6 +1,12 @@
-🚀 Appium-MobileFrameWork
+# 🚀 Cypress Web Automation Framework
 
-This guide will help you install, configure, and run the Cypress-based Web Test Automation Framework developed for robust Web Testing.
+This guide will help you **install**, **configure**, and **run** the Cypress-based Web Test Automation Framework developed for **robust Web Testing**.
+
+---
+
+## 📦 Project Structure Overview
+
+
 
 📦 Project Structure Overview
 
