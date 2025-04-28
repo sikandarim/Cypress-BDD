@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node18'  // <-- This is the same name you gave in Global Tools
+        nodejs 'Node18'  // the NodeJS tool name you set in Jenkins global tools
     }
 
     stages {
@@ -26,13 +26,21 @@ pipeline {
 
         stage('Generate Allure Report') {
             steps {
-                sh 'allure generate --clean'
+                sh '/opt/homebrew/bin/allure generate --clean'
             }
         }
 
         stage('Publish Allure Report') {
             steps {
-                 sh '/opt/homebrew/bin/allure generate --clean'
+                // publish the report to Jenkins UI
+                publishHTML(target: [
+                    reportName: 'Allure Report',
+                    reportDir: 'allure-report',   // this folder will be created by 'generate'
+                    reportFiles: 'index.html',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
+                ])
             }
         }
     }
