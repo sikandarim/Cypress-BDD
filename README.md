@@ -3,15 +3,7 @@
 This guide will help you **install**, **configure**, and **run** the Cypress-based Web Test Automation Framework developed for **robust Web Testing**.
 
 
-
-## 📦 Project Structure Overview
-
-├── cypress/ │ ├── e2e/ # 📄 Feature files (BDD format) │ ├── support/ # 🛠️ Custom commands and utilities │ ├── fixtures/ # 📊 Test data │ └── plugins/ # 🔌 Cypress plugins ├── Jenkinsfile # ⚙️ CI/CD pipeline configuration ├── package.json # 📦 Project dependencies ├── README.md # 📝 Project documentation └── allure-results/ # 
-
-
----
-
-## ⚙️ Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following tools installed:
 
@@ -24,7 +16,7 @@ Before you begin, ensure you have the following tools installed:
 
 ---
 
-## 🛠 Installation Steps
+## Installation Steps
 
 1. Clone the Repository:
    ```bash
@@ -47,10 +39,11 @@ Before you begin, ensure you have the following tools installed:
    ```bash
    npx cypress --version
    allure --version
+---
 
 ##  Running the Tests
 
-```bash
+
 Open Cypress Test Runner (GUI mode):
 npx cypress open
 Run Cypress Tests Headlessly:
@@ -58,9 +51,14 @@ npx cypress run
 Run Cypress Tests with Environment Variables:
 npx cypress run --env ENV=prod
 
-## 🛠 Generate the allure
-```bash
+
+## Generate the allure
+
 allure generate allure-results --clean
 Open the Allure Report:
 allure open
+
+
+
+
 
