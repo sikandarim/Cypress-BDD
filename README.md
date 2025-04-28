@@ -58,9 +58,8 @@ npx cypress run
 Run Cypress Tests with Environment Variables:
 npx cypress run --env ENV=prod
 
-
+## 🛠 Generate the allure
 ```bash
-
 allure generate allure-results --clean
 Open the Allure Report:
 allure open
