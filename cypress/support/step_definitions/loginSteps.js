@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import LoginPage from "../pages/LoginPage"; // ✅ Notice "default" import (no "*")
+import LoginPage from "../pages/LoginPage"; 
 import UrlLoader from "../utils/UrlLoader";
 
 Given('I am on the login page', () => {
